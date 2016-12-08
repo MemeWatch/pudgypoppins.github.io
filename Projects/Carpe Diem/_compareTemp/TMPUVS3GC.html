@@ -1,0 +1,658 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<style>
+#menu{
+position:absolute;
+left:2%;
+top:25px;
+}
+.link:hover{
+	background-color:rgba(57,196,232,1.00);
+	border-radius:5px;
+	padding:10px;
+	text-decoration:none;
+}
+<style type="text/css">
+    #toggle{
+    left:50%;
+}
+#music{
+    display:none;
+}
+#stellabella{
+	position:absolute;
+	left:75%;
+	cursor:url(hand-clip-art-hand.png), default;
+}
+  </style>
+
+<link rel="shortcut icon" href="favicon.ico"/>
+<script>
+$(document).ready(function() {
+    $('#start').delay(5000).fadeOut(2000);
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('#start2').delay(10000).fadeOut(2000);
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('#start3').delay(15000).fadeOut(2000);
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('#start4').delay(20000).fadeOut(2000);
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('#start5').delay(25000).fadeOut(2000);
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('#start6').delay(30000).fadeOut(2000);
+});
+</script>
+<script>
+function didThatImageJustChange() {
+    var image = document.getElementById('secretrow2pics');
+    if (image.src.match("encrypted")) {
+        image.src = "http://proof.nationalgeographic.com/files/2015/03/do-fishing-craft-vietnam-c.jpg";
+    } else {
+        image.src = "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4jY2Blzj25izKDwXlq42EuXl5qsuBNrB2ZznydC_jmM_PuMG7";
+    }
+}
+</script>
+<script type="text/javascript">//<![CDATA[
+window.onload=function(){
+var toggleImg = document.getElementById('toggle');
+
+var playSound = function() {
+  if (music.paused == false) {
+      music.pause();
+  } else {
+      music.play();
+  }
+};
+
+toggleImg.addEventListener('click', playSound, false);
+
+
+
+}//]]> 
+
+</script>
+<style>
+html, body{
+	height:100%;
+}
+.links{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.links:hover{
+	background-color:rgba(57,196,232,1.00);
+	border-radius:5px;
+	padding:10px;
+	text-decoration:none;
+	position:absolute;
+}
+#Contact{
+	right:25px;
+	font-size:18px;
+	position:fixed;
+	font-weight:300px;
+	top:25px;
+	color:white;
+	text-decoration:none;
+}
+#Contact:hover{
+	right:15px;
+	top:15px;
+}
+#Home{
+	right:150px;
+	font-size:18px;
+	position:fixed;
+	font-weight:300px;
+	top:25px;
+	color:white;
+	text-decoration:none;
+}
+#Home:hover{
+	right:140px;
+	top:15px;
+}
+#Donate{
+	right:220px;
+	font-size:18px;
+	position:fixed;
+	font-weight:300px;
+	top:25px;
+	color:white;
+	text-decoration:none;
+}
+#Donate:hover{
+	right:210px;
+	top:15px;
+}
+#Photos{
+	right:297px;
+	font-size:18px;
+	position:fixed;
+	font-weight:300px;
+	top:25px;
+	color:white;
+	text-decoration:none;
+}
+#Photos:hover{
+	right:287px;
+	top:15px;
+}
+#start{
+	left:0px;
+	top:0px;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:-1;
+}
+#start2{
+	left:0px;
+	top:0px;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:-2;
+}
+#start3{
+	left:0px;
+	top:0px;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:-3;
+}
+#start4{
+	left:0px;
+	top:0px;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:-4;
+}
+#start5{
+	left:0px;
+	top:0px;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:-5;
+}
+#start6{
+	left:0px;
+	top:0px;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:-6;
+}
+#start7{
+	left:0px;
+	top:0px;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:-7;
+}
+#startbutton{
+	z-indez:1;
+	position:absolute;
+	top:40%;
+	color:white;
+	left:44%;
+}
+p{
+	padding: 15px 50px;
+	padding-top: 15px;
+	padding-right: 50px;
+	padding-bottom: 15px;
+	padding-left: 50px;
+	color: #FFF;
+	padding: 15px 50px;
+	border: 1px solid #fff;
+	letter-spacing: 3px;
+	font-size: 16px;
+}
+p:hover{
+	background-color:rgba(0,0,0,0.50);
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+a:visited{
+	text-decoration:none;
+	color:white;
+}
+a:hover{
+	text-decoration:none;
+	color:white;
+}
+.row1{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:113%;
+	padding:0;
+	display:inline-block;
+}
+.row2{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:163%;
+	padding:0;
+	display:inline-block;
+}
+.row3{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:213%;
+	padding:0;
+	display:inline-block;
+}
+.row4{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:263%;
+	padding:0;
+	display:inline-block;
+}
+.videorow4{
+	width:25%;
+	height:50%;
+	position:absolute;
+	top:263%;
+	padding:0;
+	display:inline-block;
+}
+.row5{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:313%;
+	padding:0;
+	display:inline-block;
+}
+.row6{
+	width:50%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:363%;
+	padding:0;
+	display:inline-block;
+}
+.row7{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:413%;
+	padding:0;
+	display:inline-block;
+}
+.row8{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:463%;
+	padding:0;
+	display:inline-block;
+}
+.row9{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:513%;
+	padding:0;
+	display:inline-block;
+}
+.row10{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:563%;
+	padding:0;
+	display:inline-block;
+}
+.specrow11{
+	width:33.3333333333%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:613%;
+	padding:0;
+	display:inline-block;
+}
+.row12{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:713%;
+	padding:0;
+	display:inline-block;
+}
+.row13{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:763%;
+	padding:0;
+	display:inline-block;
+}
+.row14{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:813%;
+	padding:0;
+	display:inline-block;
+}
+.row15{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:863%;
+	padding:0;
+	display:inline-block;
+}
+.row16{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:913%;
+	padding:0;
+	display:inline-block;
+}
+.row17{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:963%;
+	padding:0;
+	display:inline-block;
+}
+.row18{
+	width:25%;
+	min-height:25%;
+	height:50%;
+	position:absolute;
+	top:1013%;
+	padding:0;
+	display:inline-block;
+}
+#row1pics{
+	left:0%;
+}
+#me4{
+	left:0%;
+	opacity:0;
+}
+#me4:hover{
+	left:0%;
+	opacity:1;
+}
+#pano1{
+	width:50%;
+	left:0%;
+}
+#specrow1pics{
+	left:0%;
+	height:100%;
+	height:100%;
+}
+#pano2{
+	width:50%;
+	left:50%;
+}
+#row2pics{
+	left:25%;
+}
+#secretrow2pics{
+	left:25%;
+}
+#specrow2pics{
+	left:33.3333333333%;
+	height:100%;
+	height:100%;
+}
+#row3pics{
+	left:50%;
+}
+#me2{
+	left:50%;
+	opacity:0;
+}
+#me2:hover{
+	opacity:1;
+	left:50%;
+}
+#specrow3pics{
+	left:66.6666666666%;
+	height:100%;
+}
+#videorow3{
+	left:50%;
+	width:25%;
+}
+#nyan{
+	left:50%;
+	height:50%;
+}
+#row4pics{
+	left:75%;
+}
+#barn{
+	left:75%;
+	height:39.67%;
+}
+#Photography{
+	position:absolute;
+	font-size:35px;
+	left:3%;
+	top:103.5%;
+	color:#333;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	display: inline-block;
+	line-height: 1.5em;
+	margin-bottom:5%;
+}
+#PhotoCreds{
+	position:absolute;
+	font-size:35px;
+	right:3%;
+	top:103.5%;
+	color:#D3D3D3;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	display: inline-block;
+	line-height: 1.5em;
+	margin-bottom:5%;
+}
+</style>
+<meta charset="UTF-8">
+<title>Photography</title>
+</head>
+
+<body>
+<div id="startbutton">
+<p><a href="#row1pics">BROWSE</a></p>
+</div>
+<img src="http://d33tz7arw1d3eu.cloudfront.net/06348/7528f707355dafde556e27c27b2c62aa-cover.jpg" id="start"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/842/cache/storm-saskatchewan-canada-farm_84242_990x742.jpg" id="start2"/>
+<img src="https://www.apple.com/osx/elcapitan-preview/static/osx-preview/overview/hero/image_large.jpg" id="start3"/>
+<img src="The PCMR.JPG" id="start4"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/857/cache/brown-bear-eating-alaska_85703_990x742.jpg" id="start5"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/884/cache/unterthiner-italy-graian-alps_88466_990x742.jpg
+" id="start6"/>
+<img src="http://d33tz7arw1d3eu.cloudfront.net/06348/7528f707355dafde556e27c27b2c62aa-cover.jpg" id="start7"/>
+
+<a href="mailto:bdiamond21@pcstudents.us" target="_blank" id="Contact" class="links">Contact Us  <img src="Gifs/Jump Around.gif"/></a>
+<a href="http://utahunicyclingsociety.com/" id="Home" class="links">Home</a>
+<a href="Donate.html" id="Donate" class="links">Donate</a>
+<a href="Photography.html" id="Photos" class="links">Photos</a>
+
+<div class="container" id="menu">                                       
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="swag" data-toggle="dropdown">Menu
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="swag">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="http://utahunicyclingsociety.com/" class="link">Home</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="AboutUs.html" class="link">About Us</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="Donate.html" class="link">Donate</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="Photography.html" class="link">Photography</a></li>
+    </ul>
+  </div>
+</div>
+
+<h1 id="Photography">Awesome Photography</h1>
+<h1 id="PhotoCreds">Not all photos are mine</h1>
+<img src="http://proof.nationalgeographic.com/files/2014/04/boat-dal-lake-snow-c.jpg" id="row1pics" class="row1"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/880/cache/cappadoccia-turkey-landscape-aerial_88099_990x742.jpg" class="row1" id="row2pics"/>
+<img src="http://proof.nationalgeographic.com/files/2015/03/paraglide-adventure-denmark-cows-c.jpg" class="row1" id="row3pics"/>
+<img src="http://proof.nationalgeographic.com/files/2015/03/pronking-springbok-karoo-africa-c.jpg" class="row1" id="row4pics"/>
+
+<img src="http://proof.nationalgeographic.com/files/2015/02/140202-pod-jan-062.jpg" class="row2" id="row1pics"/>
+<img src="http://proof.nationalgeographic.com/files/2015/03/do-fishing-craft-vietnam-c.jpg" onDblClick="didThatImageJustChange()" class="row2" id="secretrow2pics"/>
+<img src="http://proof.nationalgeographic.com/files/2015/03/MM8088_130618_37519.jpg" class="row2" id="row3pics"/>
+<img src="http://proof.nationalgeographic.com/files/2015/02/140202-pod-jan-072.jpg" class="row2" id="row4pics"/>
+
+<img src="http://proof.nationalgeographic.com/files/2015/02/140202-pod-jan-032.jpg" class="row3" id="row1pics"/>
+<img src="Sheise/Sheise signs the Constitution.jpg" class="row3" id="row2pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/801/cache/mountain-sunset-landscape-china_80191_990x742.jpg" class="row3" id="row3pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/857/cache/brown-bear-eating-alaska_85703_990x742.jpg" class="row3" id="row4pics"/>
+
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/212/cache/golden-gate-bridge-fog_21245_990x742.jpg" class="row4" id="row1pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/212/cache/basilica-di-santa-maria-del-fiore_21242_990x742.jpg" class="row4" id="row2pics"/>
+<video  width="25%" height="50%" controls class="videorow4" id="videorow3"/>
+<source src="Little Einsteins - The Puppet Princess.mp4" type="video/mp4">
+</video>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/896/overrides/adelie-penguin-antarctica_89655_990x742.jpg" class="row4" id="row4pics"/>
+
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/013/cache/coral-gorgonian-laman_1383_990x742.jpg" class="row5" id="row1pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/888/cache/snow-monkey-mother-jigokudani_88869_990x742.jpg" class="row5" id="row2pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/198/cache/red-necked-grebes-swimming_19893_990x742.jpg" class="row5" id="row3pics"/>
+<img  src="Stella Bella.jpg"class="row5" id="stellabella"/>
+
+<img src="lanterns.jpg" class="row6" id="pano1"/>
+<img src="http://photography.nationalgeographic.com/u/TvyamNb-BivtNwcoxtkc5xGBuGkIMh_nj4UJHQKuoXZZpPNvG-kf9c1oCUvmNO1xhrzZen-UcivVcw/" class="row6" id="pano2"/>
+
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/801/cache/ski-sport-adventure-canada_80193_990x742.jpg" class="row7" id="row1pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/884/cache/unterthiner-italy-graian-alps_88466_990x742.jpg"class="row7" id="row2pics"/>
+<img src="http://www.somegif.com/gifs/13641019331554660414.GIF" class="row7" id="row3pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/857/cache/temples-bagan-myanmar-balloon_85722_990x742.jpg" class="row7" id="row4pics"/>
+
+
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/852/cache/cypress-ace-basin-musi_85288_990x742.jpg" class="row8" id="row1pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/816/cache/mount-fuji-sunrise-reflection_81651_990x742.jpg" class="row8" id="row2pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/036/cache/clouds-everest-chudalla_3682_990x742.jpg" class="row8" id="row3pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/857/cache/kallur-lighthouse-view_85707_990x742.jpg" class="row8" id="row4pics"/>
+
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/842/cache/storm-saskatchewan-canada-farm_84242_990x742.jpg" class="row9" id="row1pics"/>
+<img src="http://images3.wikia.nocookie.net/__cb20130616122007/nyancat/images/e/e4/Zombie_nyan_cat.gif" class="row9" id="row2pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/852/cache/red-house-lake-sweden_85293_990x742.jpg" class="row9" id="row3pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/847/cache/half-dome-yosemite_84735_990x742.jpg" class="row9" id="row4pics"/>
+
+<img src="The PCMR.JPG" class="row10" id="row1pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/339/cache/landscape-erosion-madagascar_33989_990x742.jpg" class="row10" id="row2pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/339/cache/matterhorn-lake-zermatt_33990_990x742.jpg" class="row10" id="row3pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/339/cache/nyiragongo-lava-congo_33991_990x742.jpg" class="row10" id="row4pics"/>
+
+<img src="Ground Ball.jpg" class="specrow11" id="specrow1pics"/>
+<img src="Release.jpg" class="specrow11" id="specrow2pics"/>
+<img src="Go to goal.jpg" class="specrow11" id="specrow3pics"/>
+
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/085/cache/chicken-close-up_8588_990x742.jpg" class="row12" id="row1pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/281/cache/monarch-butterflies-mexico_28112_990x742.jpg" class="row12" id="row2pics"/>
+<img src="http://2.bp.blogspot.com/-XBNn86v16Xs/VAoDCB5OA7I/AAAAAAAAAHY/7FGNXp7yYws/s400/nyan%2Bcat%2Bchile.gif" class="row12" id="nyan"/>
+<img src="http://www.wesaveland.org/wp-content/uploads/2014/06/cropped-barn-wcopyright1.jpg" class="row12" id="row4pics"/>
+
+<img src="http://proof.nationalgeographic.com/files/2015/04/150406-best-pod-panda.jpg" class="row13" id="row1pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/338/cache/sandhill-cranes-nebraska_33884_990x742.jpg" class="row13" id="row2pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/852/cache/macaque-morocco-mingorance_85291_990x742.jpg" class="row13" id="row3pics"/>
+<img src="Sheise-Flag.jpg" class="row13" id="row4pics"/>
+
+<img src="http://proof.nationalgeographic.com/files/2015/03/MM8236_111222_01485.jpg" class="row14" id="row1pics"/>
+<img src="https://s3.amazonaws.com/theinternetfireplace/fireplace1.gif" class="row14" id="row2pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/867/cache/bald-eagle-scavenger-food_86759_990x742.jpg" class="row14" id="row3pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/883/cache/sheep-portrait-new-zealand_88364_990x742.jpg" class="row14" id="row4pics"/>
+
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/626/cache/penguin-chicks-antarctica_62680_990x742.jpg" class="row15" id="row1pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/770/cache/rimu-trees-melford_77072_990x742.jpg" class="row15" id="row2pics"/>
+
+<audio controls id="music" loop> <source src="Twine.m4a" type="audio/mpeg" preload="auto"></audio>
+
+<img src="http://ecx.images-amazon.com/images/I/51EUrr0U6XL.jpg" class="row15" id="toggle" style="left:50%"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/183/cache/butterflyfish-undersea_18354_990x742.jpg" class="row15" id="row4pics"/>
+
+<img src="http://cdn.spacetelescope.org/archives/images/wallpaper2/heic1105a.jpg" class="row16" id="row1pics"/>
+<img src="comiccharcters480.gif" class="row16" id="row2pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/899/cache/frozen-waterfall-iceland_89917_990x742.jpg" class="row16" id="row3pics"/>
+<img src="http://extras.mnginteractive.com/live/media/site36/2013/0218/20130218__20130219_B2_SP19OEXMEYER~p1.jpg" class="row16" id="row4pics"/>
+
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/295/cache/jan-2011-snow-park-city_29567_600x450.jpg" class="row17" id="row1pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/896/cache/night-fire-trails_89668_990x742.jpg" class="row17" id="row2pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/896/cache/mayana-soora-thiruvizha-festival_89667_990x742.jpg" class="row17" id="row3pics"/>
+<img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/899/cache/traditional-dancing-phuket-thailand_89923_990x742.jpg" class="row17" id="row4pics"/>
+
+<img src="Me3.jpg" class="row18" id="row1pics"/>
+<img src="Me4.jpg" class="row18" id="me4"/>
+<img src="Doodle.jpeg" class="row18" id="row2pics"/>
+<img src="Me1.jpg" class="row18" id="row3pics"/>
+<img src="Me2.jpg" class="row18" id="me2"/>
+<img src="Another Puppy.jpg" class="row18" id="row4pics"/>
+
+</body>
+</html>
+<!--
+<div class="container">                                       
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="swag" data-toggle="dropdown">Menu
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="swag">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="CarpeDiem.html">Home</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="AboutUs.html">About Us</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="Donate.html">Donate</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="Photography.html">Photography</a></li>
+    </ul>
+  </div>
+</div>
+-->
