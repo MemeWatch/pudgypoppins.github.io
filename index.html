@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="favicon.ico"/>
+<style>
+body{
+	background-color:#FCFCFC;
+	margin: 0px 0px;
+}
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url(Loader.gif) no-repeat center center #FCFCFC;
+}
+#head{
+	/*width:100%;
+	height:70%;
+	position:absolute;
+	left:0%;
+	top:0%;
+	z-index:-1;
+	background-size: cover;
+    background-position: center;
+	background-attachment:fixed;
+	background-repeat: no-repeat;*/
+	background-size: cover;
+    background-position: center;
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+    position:relative;
+    height:75vh;
+}
+/*html,
+body,
+.container{
+	height: 70%;
+  margin:0;
+}
+.container{
+	 background-image: url('http://utahunicyclingsociety.com/Website%20Pics/Sunset.jpg');
+  z-index:-1;
+	background-size: cover;
+    background-position: center;
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+}*/
+
+#headertxt1{
+	text-align:center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color:#878787;
+	padding:5px;
+	background-color:rgba(52,52,52,0.70);
+    border-color:#343434;
+	border-width:2px;
+	border-style:solid;
+	font-size:18px;
+}
+#headertxt1:hover{
+	background-color:rgba(135,135,135,0.70);
+	color:#343434;
+}
+.bars{
+	left:1em;
+	top:0.5em;
+	position:fixed;
+	z-index:1001;
+	cursor:pointer;
+	color:#343434;
+}
+.invertbars{
+	left:1em;
+	top:0.5em;
+	position:fixed;
+	z-index:1001;
+	cursor:pointer;
+	color:#CBCBCB;
+}
+.invisiblemenu{
+	height:100%;
+	width:20%;
+	position:fixed;
+	left:0%;
+	top:0%;
+	background-color:#343434;
+	visibility:hidden;
+	display:none;
+}
+.menu{
+	height:100%;
+	width:20%;
+	position:fixed;
+	left:0%;
+	top:0%;
+	background-color:#343434;
+	visibility:visible;
+	display:inline;
+}
+@media screen and (max-width: 770px) {
+    .menu {
+        width: 50%;
+    }
+}
+.nav{
+	margin-top:5%;
+	color:#CBCBCB;
+	margin-left:-30px;
+	padding:15px;
+	border-bottom:solid;
+	border-bottom-color:#CBCBCB;
+	font-size:20px;
+	background-color:#343434;
+	overflow:scroll;
+}
+li:hover{
+	background-color:#515151;
+}
+#firstistheworst{
+	margin-top:calc(8vmin + 3.5em);
+}
+.swag{
+	font-size:30px;
+	text-align:center;
+	color:#CBCBCB;
+	letter-spacing:15px;
+}
+a{
+	color:#CBCBCB;
+	text-decoration:none;
+}
+a:hover{
+	color:#B1B1B1;
+	text-decoration:none;
+}
+a:visited{
+	color:#CBCBCB;
+	text-decoration:none;
+}
+.boxezohyeah{
+	width:100%;
+	margin-left:0%;
+	background-color:#E9E9E9/*rgba(203,203,203,0.70)*/;
+	z-index:-2;
+	position:relative;
+	margin-top:5%;
+}
+.story{
+	padding:50px;
+}
+#box{
+	position:absolute;
+	top:0%;
+	right:0%;
+}
+.centertxt{
+	font-family:sans-serif;
+	text-align:center;
+	margin-top:5%;
+	font-size:50px;
+}
+.footer{
+	background-color:#6FA5C4;
+	color:white;
+	padding:10px;
+	text-align:center;
+	margin-top:-10px;
+}
+.prodiv{
+	background-size: cover;
+    background-position: center;
+	background-repeat: no-repeat;
+	width:320px;
+	height:180px;
+	margin:50px;
+	margin-top:0;
+	float:left;
+}
+.explain{
+	opacity:0;
+	background-color:rgba(130,151,173,0.75);
+	width:320px;
+	height:180px;
+}
+.explain:hover{
+	opacity:1;
+}
+.weblink{
+	text-decoration:none;
+	opacity:1;
+	color:#333;
+}
+</style>
+<!--Dont open this bottom style, just pics and colors-->
+<style>
+.red{
+	color:#FF0004;
+	background-color:#00FFFB;
+	font-size:19px;
+	letter-spacing:1px;
+	padding:1px;
+}
+.orange{
+	color:#FFA730;
+	background-color:#0058CF;
+	font-size:20px;
+	letter-spacing:1px;
+	padding:1px;
+	}
+.green{
+	color:#0D5E1B;
+	background-color:#F2A1E4;
+	font-size:23px;
+	letter-spacing:1px;
+	padding:1px;
+}
+.blue{
+	color:#2274B6;
+	background-color:#DD8B49;
+	font-size:20px;
+	letter-spacing:1px;
+	padding:1px;
+}
+.indigo{
+	color:#6A00BA;
+	background-color:#95FF45;
+	font-size:17px;
+	letter-spacing:1px;
+	padding:1px;
+}
+.photo1{
+	background-image:url(img/alps.jpg);
+}
+.photo2{
+	background-image:url(img/blur.jpg);
+}
+.photo3{
+	background-image:url(img/mountain.jpg);
+}
+.photo4{
+	background-image:url(img/mountainlake.jpg);
+}
+.photo5{
+	background-image:url(img/alps.jpg);
+}
+</style>
+<script>
+ $(function() {
+            $('.bars').click(function(){
+               $(".invisiblemenu").switchClass("invisiblemenu","menu",'fast');
+               $(".menu").switchClass("menu","invisiblemenu",'fast');
+               return false;
+            });
+         });
+		 
+		 
+$(document).ready(function(){
+    $(".bars").click(function(){
+        $(".bars").toggleClass("invertbars");
+    });
+});
+
+
+// create random number
+	function randOrder() {
+		return ( Math.round(Math.random())-0.5 ); 
+	} 
+
+$(document).ready(function() {
+    
+    // classses array
+    var classes = [ 'red', 'orange', 'green', 'blue', 'indigo' ];
+    // sort array elements randomly
+    classes.sort( randOrder );
+   
+    // uncomment below to see order
+    // alert( classes.sort( randOrd ) );
+    
+    // create loop to add each array element as a class
+    $('span').each(function(i, val) {
+        $(this).addClass(classes[i]);
+    });
+});
+
+$(document).ready(function() {
+    
+    // classses array
+    var classes = [ 'photo1', 'photo2', 'photo3', 'photo4', 'photo5' ];
+    // sort array elements randomly
+    classes.sort( randOrder );
+   
+    // uncomment below to see order
+    // alert( classes.sort( randOrd ) );
+    
+    // create loop to add each array element as a class
+    $('#head').each(function(i, val) {
+        $(this).addClass(classes[i]);
+    });
+});
+
+
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('contents').style.visibility="visible";
+      },1000);
+  }
+}
+</script>
+<meta charset="UTF-8">
+<title>Bennett Land</title>
+</head>
+<body>
+<div id="load"></div>
+<div id="contents">
+<div id="head">
+<p id="headertxt1">Hello, it's <span>me</span>. I'm doing <span>well</span>, thanks for asking.</p>
+<!--<div id="box"><img src="favicon.ico" id="boximg"/></div>-->
+</div>
+<i class="fa fa-bars fa-3x bars" style="font-size:8vmin; font-weight:100;"></i>
+<div class="invisiblemenu">
+<ul>
+<li id="firstistheworst" class="nav"><a href="#me" style="text-decoration:none;">Me</a></li>
+<li class="nav"><a href="#skills" style="text-decoration:none;">Skills</a></li>
+<li class="nav"><a href="#projects" style="text-decoration:none;">Projects</a></li>
+<li class="nav"><a href="#hire" style="text-decoration:none;">Hire Me</a></li>
+<li class="nav"><a href="#contact" style="text-decoration:none;">Contact</a></li>
+</ul>
+<div class="swag">
+<a href="https://instagram.com/iskifast" target="_blank"><i class="fa fa-instagram"></i></a>
+<a href="https://jsfiddle.net/user/PudgyPoppins/fiddles/" target="_blank"><i class="fa fa-jsfiddle"></i></a>
+<a href="mailto:pudgypoppins@gmail.com?subject=You%20are%20AWESOME&amp;body=I%20would%20like%20to%20talk%20to%20you." target="_blank"><i class="fa fa-paper-plane-o"></i></a>
+</div>
+</div>
+<p id="me" class="centertxt">Who I Am</p>
+<div class="boxezohyeah" style="margin-top:5%;" >
+<p class="story">YOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLO</p>
+</div>
+<p id="skills" class="centertxt">Skills</p>
+<div class="boxezohyeah">
+<p class="story">SWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAG</p>
+</div>
+<p id="projects" class="centertxt">Projects</p>
+<!--<div class="boxezohyeah">
+<p class="story">Just fill with images and information about accomplished sites</p>
+</div>-->
+
+<div class="prodiv" style="background-image:url(Projects/Carpe%20Diem/Carpe%20Diem.png)">
+<div class="explain">
+<a style="color:#333; opacity:1;" href="Projects/Carpe Diem/CarpeDiem.html" target="_blank"><p style="font-size:18px; text-align:center;">Carpe Diem</p>
+<p>The first proffesional styled website I've built. Now a free template for image display.</a> <span><a style="color:#333; opacity:1;" href="#contact">Contact Me</a></span><a style="color:#333; opacity:1;" href="Projects/Carpe Diem/CarpeDiem.html" target="_blank"> for more information.</p></a>
+</div>
+</div>
+
+
+<div class="prodiv" style="background-image:url(Projects/Utah%20Unicycyling%20Society.png)">
+<div class="explain">
+<a style="color:#333; opacity:1;" href="http://utahunicyclingsociety.com/" target="_blank"><p style="font-size:18px; text-align:center;">Utah Unicycling Society</p>
+<p>The first of my websites to be hosted. This was for me and some friends.</p></a>
+</div>
+</div>
+<p id="hire" class="centertxt" style="margin-left:50%;">Hire</p>
+<div class="boxezohyeah">
+<p class="story">I'm glad you're interested! I will make a quality website for you within one or two months. If you don't like it, you don't have to pay full! Just the first $25 initiation fee. I typically charge $1 for line of used code. This makes this website's cost around $350. I will set up hosting, and domain names, if you add in the money needed to buy both, plus a $10 setup fee. An equation for pricing would be Total Price=x+n(h+d+10)+25 where x is the number of code lines, n is the number of domains and hosting you which to purchase, h and d are the price of hosting and domain names, the ten is the hosting setup fee, and the 25 is the initiation fee. At most, you'll have to pay $25. So, make a smart choice and invest in me today!</p>
+</div>
+<p id="contact" class="centertxt">Contact Me</p>
+<div class="boxezohyeah">
+<p class="story">SWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAGSWAG SWAG SWAG SWAG</p>
+</div>
+<div class="footer">
+© 2016 by Pudgy Poppins. All rights reserved.
+</div>
+
+<!--And the lord Bennett said: Thou shall not place code beyone this password-->
+</div>
+</body>
+</html>
+
