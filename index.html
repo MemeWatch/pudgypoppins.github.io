@@ -14,6 +14,7 @@
 body{
 	background-color:#FCFCFC;
 	margin: 0px 0px;
+	font-family:sans-serif;
 }
 #load{
     width:100%;
@@ -264,8 +265,8 @@ a:visited{
                return false;
             });
          });
-		 
-		 
+
+
 $(document).ready(function(){
     $(".bars").click(function(){
         $(".bars").toggleClass("invertbars");
@@ -275,19 +276,19 @@ $(document).ready(function(){
 
 // create random number
 	function randOrder() {
-		return ( Math.round(Math.random())-0.5 ); 
-	} 
+		return ( Math.round(Math.random())-0.5 );
+	}
 
 $(document).ready(function() {
-    
+
     // classses array
     var classes = [ 'red', 'orange', 'green', 'blue', 'indigo' ];
     // sort array elements randomly
     classes.sort( randOrder );
-   
+
     // uncomment below to see order
     // alert( classes.sort( randOrd ) );
-    
+
     // create loop to add each array element as a class
     $('span').each(function(i, val) {
         $(this).addClass(classes[i]);
@@ -295,15 +296,15 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    
+
     // classses array
     var classes = [ 'photo1', 'photo2', 'photo3', 'photo4', 'photo5' ];
     // sort array elements randomly
     classes.sort( randOrder );
-   
+
     // uncomment below to see order
     // alert( classes.sort( randOrd ) );
-    
+
     // create loop to add each array element as a class
     $('#head').each(function(i, val) {
         $(this).addClass(classes[i]);
@@ -392,4 +393,3 @@ document.onreadystatechange = function () {
 </div>
 </body>
 </html>
-
