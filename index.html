@@ -1,7 +1,5 @@
-<!doctype html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -9,12 +7,11 @@
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="shortcut icon" href="favicon.ico">
 <style>
 body{
 	background-color:#FCFCFC;
 	margin: 0px 0px;
-	font-family:sans-serif;
 }
 #load{
     width:100%;
@@ -187,13 +184,20 @@ a:visited{
 	height:180px;
 	margin:50px;
 	margin-top:0;
-	float:left;
+display: inline-block;
+
+box-sizing: border-box;
 }
 .explain{
 	opacity:0;
 	background-color:rgba(130,151,173,0.75);
 	width:320px;
 	height:180px;
+}
+#projectlist{
+	margin:0 auto;
+position: relative;
+  text-align: center;
 }
 .explain:hover{
 	opacity:1;
@@ -329,8 +333,8 @@ document.onreadystatechange = function () {
 <title>Bennett Land</title>
 </head>
 <body>
-<div id="load"></div>
-<div id="contents">
+<div id="load" style="visibility: hidden;"></div>
+<div id="contents" style="visibility: visible;">
 <div id="head">
 <p id="headertxt1">Hello, it's <span>me</span>. I'm doing <span>well</span>, thanks for asking.</p>
 <!--<div id="box"><img src="favicon.ico" id="boximg"/></div>-->
@@ -351,7 +355,7 @@ document.onreadystatechange = function () {
 </div>
 </div>
 <p id="me" class="centertxt">Who I Am</p>
-<div class="boxezohyeah" style="margin-top:5%;" >
+<div class="boxezohyeah" style="margin-top:5%;">
 <p class="story">YOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLOYOLO YOLO YOLO YOLO</p>
 </div>
 <p id="skills" class="centertxt">Skills</p>
@@ -362,11 +366,11 @@ document.onreadystatechange = function () {
 <!--<div class="boxezohyeah">
 <p class="story">Just fill with images and information about accomplished sites</p>
 </div>-->
-
+<div id="projectlist">
 <div class="prodiv" style="background-image:url(Projects/Carpe%20Diem/Carpe%20Diem.png)">
 <div class="explain">
 <a style="color:#333; opacity:1;" href="Projects/Carpe Diem/CarpeDiem.html" target="_blank"><p style="font-size:18px; text-align:center;">Carpe Diem</p>
-<p>The first proffesional styled website I've built. Now a free template for image display.</a> <span><a style="color:#333; opacity:1;" href="#contact">Contact Me</a></span><a style="color:#333; opacity:1;" href="Projects/Carpe Diem/CarpeDiem.html" target="_blank"> for more information.</p></a>
+<p>The first proffesional styled website I've built. Now a free template for image display. Contact Me for more information.</p></a>
 </div>
 </div>
 
@@ -377,9 +381,11 @@ document.onreadystatechange = function () {
 <p>The first of my websites to be hosted. This was for me and some friends.</p></a>
 </div>
 </div>
-<p id="hire" class="centertxt" style="margin-left:50%;">Hire</p>
+
+</div>
+<p id="hire" class="centertxt"> Hire</p>
 <div class="boxezohyeah">
-<p class="story">I'm glad you're interested! I will make a quality website for you within one or two months. If you don't like it, you don't have to pay full! Just the first $25 initiation fee. I charge based on the time it takes me to make a site, and the effort I put into it. I would sell this site for $99. I'll set up hosting, and domain names, if you add in the money needed to buy both, plus a $10 setup fee. At most, you'll have to pay $25. So, make a smart choice and invest in me today!</p>
+<p class="story">I'm glad you're interested! I will make a quality website for you within one or two months. If you don't like it, you don't have to pay full! Just the first $25 initiation fee. I typically charge $1 for line of used code. This makes this website's cost around $350. I will set up hosting, and domain names, if you add in the money needed to buy both, plus a $10 setup fee. An equation for pricing would be Total Price=x+n(h+d+10)+25 where x is the number of code lines, n is the number of domains and hosting you which to purchase, h and d are the price of hosting and domain names, the ten is the hosting setup fee, and the 25 is the initiation fee. At most, you'll have to pay $25. So, make a smart choice and invest in me today!</p>
 </div>
 <p id="contact" class="centertxt">Contact Me</p>
 <div class="boxezohyeah">
@@ -389,7 +395,8 @@ document.onreadystatechange = function () {
 © 2016 by Pudgy Poppins. All rights reserved.
 </div>
 
-<!--And the lord Bennett said: Thou shall not place code beyone this password-->
+<!--And the lord Bennett said: Thou shalt not place code beyone this comment-->
 </div>
-</body>
-</html>
+
+
+</body></html>
