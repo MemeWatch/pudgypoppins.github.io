@@ -1,0 +1,118 @@
+<!--404-->
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <style>
+    body{
+      margin:0;
+    }
+    center{
+      margin:20px;
+    }
+    .first{
+      height:100vh;
+      width:100vw;
+      border-bottom:1px solid black;
+      margin:0;
+      overflow:scroll;
+    }
+    #box{width:300px;height:300px;background-color:lightblue}
+  </style>
+  <script>
+  $(document).ready(function (){
+    $("#box").on("click", function() {
+        var $top = $("#box").css('margin-top');
+        var $newval = (parseInt($top) + 10) + "px";
+        $("#box").css ({
+            'margin-top' : $newval
+        });
+    });
+});
+  </script>
+</head>
+<body>
+<div class="first">
+  <center>Oh noes, this is bad.</center>
+  <center>The page you are looking for</center>
+  <center>Does not exist. Whoops</center>
+  <br>
+  <br>
+  <center>In the mean time, enjoy some Haikus (what's the plural for Haiku?)</center>
+  <center><a href="index.html">Or, go back to my one and only page.</a></center>
+  <br>
+  <br>
+  <center>Haikus are super</center>
+  <center>This is seven syllables</center>
+  <center>And this is five, yay!</center>
+  <br>
+  <br>
+  <center>Sometimes I follow rules</center>
+  <center>And sometimes I don't really</center>
+  <center style="margin-bottom:100vh;">Thug life Haiku</center>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+  <center>Why are you still here?</center>
+  <center>Can't you be more productive?</center>
+  <center>Don't scroll down anymore</center>
+  <br>
+  <br>
+  <center>All right, you'll get it</center>
+  <center>I would punch you but I can't</center>
+  <center>I'm words on a screen</center>
+  <br>
+  <br>
+  <center>Here, will this stop you?</center>
+  <center>ASCII art, please?</center>
+  <center style="margin-bottom:100vh;">Scroll down. You'll see it.</center>
+  <br>
+  <br>
+  <center>
+  <pre>Macintosh
+         ______________
+        /             /|
+       /             / |
+      /____________ /  |
+     | ___________ |   |
+     ||           ||   |
+     ||           ||   |
+     ||           ||   |
+     ||___________||   |
+     |   _______   |  /
+    /|  (_______)  | /
+   ( |_____________|/
+    \
+.=======================.
+| ::::::::::::::::  ::: |
+| ::::::::::::::[]  ::: |
+|   -----------     ::: |
+`-----------------------'
+</pre>
+</center>
+<br>
+<br>
+<center>Now please, stop scrolling</center>
+<center>I'm running out of good thoughts</center>
+<center>You should pity me</center>
+<br>
+<br>
+<center>I do not make games</center>
+<center>I didn't make the artwork</center>
+<center>But I did make this</center>
+<br>
+<br>
+<center>Click on the big square</center>
+<center>And it will move down the page</center>
+<center>How far can you go?</center>
+<center><div id="box"></div></center>
+</body>
+</html>
