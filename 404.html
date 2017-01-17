@@ -33,6 +33,7 @@
     $("#box").on("click", function() {
         var $top = $("#box").css('margin-top');
         var $newval = (parseInt($top) + 10) + "px";
+  //    var $newval = (parseInt($top) + 63360) + "in";
         $("#box").css ({
             'margin-top' : $newval
         });
@@ -113,6 +114,6 @@
 <center>Click on the big square</center>
 <center>And it will move down the page</center>
 <center>How far can you go?</center>
-<center><div id="box"></div></center>
+<center><a href="#box"><div id="box"></div></a></center>
 </body>
 </html>
