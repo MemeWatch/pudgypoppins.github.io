@@ -1,14 +1,14 @@
 <!doctype html>
 <html><head>
-<script src="jquery.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="shortcut icon" href="favicon.ico"/>
 <style>
@@ -134,7 +134,7 @@ li:hover{
 	background-color:#515151;
 }
 #firstistheworst{
-	margin-top:calc(8vmin + 3.5em);
+	margin-top:calc(8vmin + 3em);
 }
 .swag{
 	font-size:30px;
@@ -352,6 +352,12 @@ function openNav() {
 function closeNav() {
     document.getElementById("side").style.display = "none";
 }
+function nobtn() {
+    document.getElementById("bars").style.display = "none";
+}
+function yesbtn() {
+    document.getElementById("bars").style.display = "inline";
+}
 </script>
 <meta charset="UTF-8">
 <title>Bennett Land</title>
@@ -363,9 +369,10 @@ function closeNav() {
 <p id="headertxt1">Hello, it's <span>me</span>. I'm doing <span>well</span>, thanks for asking.</p>
 <!--<div id="box"><img src="favicon.ico" id="boximg"/></div>-->
 </div>
-<i class="fa fa-bars fa-3x bars" style="font-size:8vmin; font-weight:100;"  onclick="openNav()"></i>
+<i class="fa fa-bars fa-3x bars" style="font-size:8vmin; font-weight:100;" id="bars" onclick="openNav();nobtn()"></i>
 <div class="menu" id="side">
-<i class="fa fa-times fa-3x" style="font-size:8vmin; font-weight:100;"  onclick="closeNav()"></i>
+<!--<p style="font-size:8vmin; font-weight:100; color:#CBCBCB; cursor:pointer; margin-left:50px;"  onclick="closeNav();yesbtn()">&times;</p>-->
+<p style="font-size:8vmin; font-weight:100;" class="closebtn" onclick="closeNav();yesbtn()">&times;</p>
 <ul>
 <li id="firstistheworst" class="nav"><a href="#me" style="text-decoration:none;">Me</a></li>
 <li class="nav"><a href="#skills" style="text-decoration:none;">Skills</a></li>
@@ -425,3 +432,4 @@ function closeNav() {
 </div>
 </body>
 </html>
+
