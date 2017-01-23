@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Naan for the Poor</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script
+  src="http://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script>
+  function cnn() {
+    document.getElementById("review").innerHTML = "\"Everyday, people are suffering from a problem that has been completly ignored; Naan-Starvation. Naan for the Poor delivers an amazing prduct for free to the people who need it most.\"";
+  }
+  function nbc() {
+    document.getElementById("review").innerHTML = "\"Naan for the Poor is a unique non-profit. Where other non-profits give the bare necessities, Naan for the Poor gives joy.\"";
+  }
+  function nyt() {
+    document.getElementById("review").innerHTML = "\"The best thing since sliced naan.\"";
+  }
+  function step1() {
+    document.getElementById("steps").style.backgroundImage = "url('step1.jpg')";
+  }
+  function step2() {
+    document.getElementById("steps").style.backgroundImage = "url('step2.jpg')";
+  }
+  function step3() {
+    document.getElementById("steps").style.backgroundImage = "url('step3.jpg')";
+  }
+  function step4() {
+    document.getElementById("steps").style.backgroundImage = "url('step4.jpg')";
+  }
+
+  function text1() {
+    document.getElementById("swag").innerHTML = "Grandmas bake the naan using our secret recipe. In order to be productive, they must bake a thousand naan breads a day. You can help us out by donating a grandma.";
+  }
+  function text2() {
+    document.getElementById("swag").innerHTML = "The naans are then loaded onto high security trucks and shipped to the nearest recepient or docking bay. To prevent stolen naan in countries where terrorism is a major threat, the trucks are protected by volunteers and artillary.";
+  }
+  function text3() {
+    document.getElementById("swag").innerHTML = "After safley coming to the helicopters, the naan is then flown. The distance may vary, as people need naan both in this country, and across seas. A system of helicopters work together in order to be most productive.";
+  }
+  function text4() {
+    document.getElementById("swag").innerHTML = "When flying over towns, settlements, or cities, that are in need of naan, the helicopters will release the cargo compartments. Naan will then gracefully glide down in boxes.";
+  }
+  /*function number2{
+	  step2();
+	  text2();
+  }*/
+  (function($) {
+    $.fn.countTo = function(options) {
+        // merge the default plugin settings with the custom options
+        options = $.extend({}, $.fn.countTo.defaults, options || {});
+
+        // how many times to update the value, and how much to increment the value on each update
+        var loops = Math.ceil(options.speed / options.refreshInterval),
+            increment = (options.to - options.from) / loops;
+
+        return $(this).each(function() {
+            var _this = this,
+                loopCount = 0,
+                value = options.from,
+                interval = setInterval(updateTimer, options.refreshInterval);
+
+            function updateTimer() {
+                value += increment;
+                loopCount++;
+                $(_this).html(value.toFixed(options.decimals));
+
+                if (typeof(options.onUpdate) == 'function') {
+                    options.onUpdate.call(_this, value);
+                }
+
+                if (loopCount >= loops) {
+                    clearInterval(interval);
+                    value = options.to;
+
+                    if (typeof(options.onComplete) == 'function') {
+                        options.onComplete.call(_this, value);
+                    }
+                }
+            }
+        });
+    };
+
+    $.fn.countTo.defaults = {
+        from: 0,  // the number the element should start at
+        to: 100,  // the number the element should end at
+        speed: 1000,  // how long it should take to count between the target numbers
+        refreshInterval: 100,  // how often the element should be updated
+        decimals: 0,  // the number of decimal places to show
+        onUpdate: null,  // callback method for every time the element is updated,
+        onComplete: null,  // callback method for when the element finishes updating
+    };
+})(jQuery);
+
+jQuery(function($) {
+        $('.counter').countTo({
+            from: 0,
+            to: 7500,
+            speed: 10500,
+            refreshInterval: 50,
+            onComplete: function(value) {
+                console.debug(this);
+            }
+        });
+    });
+  </script>
+
+  <style>
+  body{
+    margin:0;
+    padding:0;
+  }
+  #hero{
+    width:100vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('heroimg.jpg');
+    background-repeat: no-repeat;
+  }
+  .herotxt{
+    color:white;
+    margin:0 0 0 50px;
+    font-family: Quicksand;
+    max-width: 40%;
+  }
+  #hero h1{
+    font-size: 100px;
+    letter-spacing: 2.5px;
+    /*padding-top:20vh;*/
+    padding-top: 100px;
+  }
+  #hero p{
+    font-size:50px;
+  }
+  .container{
+  }
+  .subheader{
+    text-align: center;
+    font-family: Quicksand;
+    width:auto;
+    margin:20px 0 20px 0;
+    padding:20px;
+    /*background-color:#F4F4F4;*/
+    color:#c79e2c;
+    -webkit-transition: .7s;
+    font-size:60px;
+  }
+  .subheader:hover{
+    text-decoration: underline;
+    color:black;
+    -webkit-transition: .7s;
+  }
+  .bigimg{
+    background-size:contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width:853px;
+    height:480px;
+  }
+  .description{
+    max-width:60%;
+    text-align: left;
+    margin:50px 20%;
+    font-family: sans-serif;
+    font-size:24px;
+    color:#6c4c32;
+  }
+  .box{
+    width:calc(100% - 40px);
+    background-color:#F4F4F4;
+    padding:20px;
+    margin:0;
+  }
+  #review{
+    font-family:sans-serif;
+    padding:20px;
+    font-size:32px;
+    color:#7d7d7d;
+    margin:10px 15%;
+  }
+  .logo{
+    background-size: contain;
+    background-position:center center;
+    background-repeat:no-repeat;
+    width:100px;
+    height:50px;
+    margin:10px 50px 40px 50px;
+    display: inline-block;
+    text-align: center;
+  }
+  .logo:hover{
+    cursor:pointer;
+  }
+  .counter{
+    width:200px;
+    margin:20px auto;
+    text-align:center;
+    display:block;
+    font-size:70px;
+    color:white;
+    font-family: Quicksand;
+  }
+  #naancount{
+    color:white;
+    font-size: 45px;
+    font-family: Quicksand;
+  }
+  #steps{
+	  background-image:url(step1.jpg);
+	  width:500px;
+	  height:300px;
+	  background-size:contain;
+	  background-position:center center;
+	  background-repeat:no-repeat;
+	  margin:20px 0;
+  }
+  .step{
+	  margin:0 50px;
+  }
+  .step:hover{
+	  text-decoration:underline;
+	  cursor:pointer;
+  }
+  .helper{
+    margin: 50px;
+    padding:50px;
+    background-color:#f4f4f4;
+    text-align: center;
+    width:25%;
+	min-height:25vh;
+    display:inline-block;
+  }
+  .helper h1{
+    text-align: center;
+    font-family:Quicksand;
+    margin:-20px 0 0 0;
+  }
+  .helper p{
+    margin:20px 0 30px 0;
+    text-align: left;
+    line-height: 30px;
+  }
+  .button{
+    padding:10px;
+    border:1px solid #7d7d7d;
+    -webkit-transition: .7s;
+    font-family:Quicksand;
+  }
+  .button:hover{
+    -webkit-transition: .7s;
+    background-color: #6c4c32;
+    color:white;
+    cursor:pointer;
+  }
+  .navigation{
+    position: fixed;
+    top:0;
+    left:0;
+    padding:40px;
+    background-color:rgba(255, 255, 255, 0.7);
+    width:100vw;
+  }
+  .navigation a{
+    margin:0 50px;
+    font-family: Quicksand;
+    text-decoration: none;
+    color:black;
+  }
+  .navigation a:hover{
+    text-decoration: underline;
+    cursor:pointer;
+  }
+  </style>
+</head>
+<body>
+  <div class="navigation">
+    <center>
+      <a href="#press">Press</a>
+      <a href="#are">Who We Are</a>
+      <a href="#four">Four Steps</a>
+      <a href="#whohelp">Who We Help</a>
+      <a href="#youhelp">How You can Help</a>
+    </center>
+  </div>
+  <div id="hero">
+    <h1 class="herotxt">Naan for the Poor</h1>
+    <p class="herotxt">A <i>naan-profit</i> aimed to bring the joys of naan across the world</p>
+  </div>
+  <div class="container">
+    <div class="box" id="press">
+      <center style="margin:-10px 0 -40px 0;">
+      <h1 class="subheader" style="font-size:36px;">What the Press Has to Say</h1>
+    </center>
+      <center id="review">Click on the news sources below for a testimonial</center>
+      <center>
+      <div class="logo" onclick="cnn()" style="background-image:url('cnn-logo.png')"></div>
+      <div class="logo" onclick="nbc()"  style="background-image:url('nbc-logo.png')"></div>
+      <div class="logo" onclick="nyt()"  style="background-image:url('nyt-logo.png')"></div>
+      </center>
+    </div>
+    <div class="box" style="background-color:#967760;">
+      <center id="naancount">naans delivered</center>
+      <span class="counter"></span>
+    </div>
+    <div class="box" style="background-color: #eaeaea;" id="are">
+    <center>
+    <h1 class="subheader">Who We Are</h1>
+  </center>
+  <center class="description" style="max-width:853px;">Naan for the Poor is a non-profit dedicated to providing naan bread across the world. We deliver this tasty treat through helicopters, trucks, and people just like you. People across the world rely on Naan for the Poor for their naan needs.</center>
+</div>
+<div class="box" style="background-color:white;" id="four">
+  <center>
+  <h1 class="subheader">The Four Step Process</h1>
+</center>
+<center>
+<div id="steps"></div>
+</center>
+<center><span class="step" onClick="step1(); text1()">Step 1</span><span class="step" onClick="step2(); text2()">Step 2</span><span class="step" onClick="step3(); text3()">Step 3</span><span class="step" onClick="step4(); text4()">Step 4</span></center>
+<center class="description" style="margin:10px 30% 40px 30%; font-size:24px; max-width:550px;" id="swag">Grandmas bake the naan using our secret recipe. In order to be productive, they must bake a thousand naan breads a day. You can help us out by donating a grandma.</center>
+</div>
+<div class="box" id="whohelp">
+    <center>
+    <h1 class="subheader">Who We Help</h1>
+  </center>
+  <center>
+  <div class="bigimg" style="background-image:url('WhoWeHelp.jpg')">Not Doctors Without Borders</div>
+</center>
+<p class="description">We help people who lack the financial support that is needed to buy luxuries such as naan. Whether it is in third world countires, or one of your neighbors down the street, Naan for the Poor helps everyone.</p>
+</div>
+<div class="box" style="background-color:white;" id="youhelp">
+    <center>
+    <h1 class="subheader">How You Can Help</h1>
+  </center>
+  <center>
+    <div class="helper">
+      <h1>Donate a Granny</h1>
+      <p>Grannies are a much needed resource in the naan business. Their participation is vital to our success, as without them, no naan could be baked. Due to how hard it is to accumulate a grandma, we are lacking the help we need in order to make naan. Help us out by donating a granny today!</p>
+      <div class="button">Donate a Granny</div>
+    </div>
+    <div class="helper">
+      <h1>Make Naan for Us</h1>
+      <p>If you lack a granny, but are an avid baker yourself, you can support us by baking naan. Signing up allows access to our top secret recipe as well as other benefits such as: Discount on naan ingredients, and a warm gooey feeling inside that tells you that you are doing the right thing.</p>
+      <div class="button">Make Naan for Us</div>
+    </div>
+    <div class="helper">
+      <h1>Become a Trucker</h1>
+      <p>Are you currently a truck driver, or want to be one? Do you like the idea of a cool radio handle? If so, this is the right job for you. However, it's not just truck driving. It is your duty to make sure the naan is safley delivered across borders. Should anyone try to take the naan, you must take them out.</p>
+      <div class="button">Become a Truck Driver</div>
+    </div>
+    <div class="helper">
+      <h1>Become a Pilot</h1>
+      <p>Pilots will either fly in helicopters or planes depending on the distance. When flying domestic, you'll be in a helicopter. If overseas, you'll be flying a stealth bomber. Once over a target you'll release the naan, bringing joy to all. It is your duty to protect the aircraft against outside threats.</p>
+      <div class="button">Become a Pilot</div>
+    </div>
+    <div class="helper">
+      <h1>Donate Money</h1>
+      <p>Naan for the Poor runs solely on donations and the kindness of volunteers (Despite the popular belief that we sell grannies on the black market). To keep us delivering, please donate lots of money. Like lots of money. So much money. Too much money. More money! Just give us money. Click that button. Donate that money. Now!</p>
+      <div class="button">Donate Money</div>
+    </div>
+  </center>
+</div>
+  </div>
+</body>
+</html>
