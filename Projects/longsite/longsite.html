@@ -5,6 +5,11 @@
 <title>Longest Website</title>
 <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
 <style>
+@media all and (orientation: portrait) {
+	#invisible{
+		display:inline-block;
+	}
+}
 body{
 	font-family:sans-serif;
 }
@@ -75,6 +80,7 @@ p a:hover{
 <center>
 <h1 id="head">Currently, this is the longest website</h1></center>
 <center><p style="color:black; border:none;">Don't believe me? Scroll down a bit.</p></center>
+<center><p style="color:black; border:none; display:none;" id="invisible">Oh, hi there! If you can read this message, it might mean that you are on a phone or tablet, or another high DPI device. That's great an' all, but this website won't really be that accurate now. To see the full capacity of this site, try using a laptop or desktop computer.</p></center>
 <center><p style="color:black; border:none; font-size:10px; -webkit-transform:rotate(-90deg); float:right;">The measurements on the side are in pixels</p></center>
 <div class="counter"></div>
 <span style="top:1cm">1 Centimeter</span>
