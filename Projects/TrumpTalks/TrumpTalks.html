@@ -1,1 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Trump Talks</title>
+<style>
+body{background-image:url(Trump.jpg); background-size:cover; background-position:center; background-repeat:no-repeat; background-attachment:fixed; color:white;}
+#container{
+	padding:17% 0;
+}
+p{display:none; position:absolute;}
+</style>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js"></script>
+<script>
+//A
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 65) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/MakeAmericaGreatAgain");
+   }
+  });
+//B
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 66) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/BelieveMe");
+   }
+  });
+  //up arrow
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 38) {
+     $("body").css("background-image","url(Putin.jpg)");
+   }
+  });
+  //down arrow
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 40) {
+     $("body").css("background-image","url(Trump.jpg)");
+   }
+   });
+   //right arrow
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 39) {
+     $("body").css("background-image","url(Hilary.jpg)");
+   }
+   });
+   //left arrow
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 37) {
+     $("body").css("background-image","url(Bernie.jpg)");
+   }
+   });
 
+//E
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 69) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/Expensive");
+   }
+  });
+//G
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 71) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/GreatGreatWall");
+   }
+  });
+//M
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 77) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/MarkMyWords");
+   }
+  });
+//P
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 80) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/MexicoWillPay");
+   }
+  });
+
+</script>
+</head>
+
+<body>
+<div id="container">
+<center style="font-family:sans-serif; font-size:86px;font-weight:100;">Make Trump Talk!</center>
+<center style="font-family:sans-serif; font-size:16px; margin-top:10px;">Click your Keyboard Keys!</center>
+<p style="top:25%; left:65%; color:tomato;"></p>
+</div>
+</body>
+</html>
