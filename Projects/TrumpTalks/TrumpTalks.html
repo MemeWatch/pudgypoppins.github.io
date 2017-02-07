@@ -8,7 +8,7 @@ body{background-image:url(Trump.jpg); background-size:cover; background-position
 #container{
 	padding:17% 0;
 }
-p{display:none; position:absolute;}
+b{display:none; position:absolute;}
 </style>
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script src="https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js"></script>
@@ -23,6 +23,7 @@ p{display:none; position:absolute;}
   $(document).keydown(function(keyPressed) {
    if (keyPressed.keyCode == 66) {
 	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/BelieveMe");
+	 $("b").css("display","inline-block");
    }
   });
   //up arrow
@@ -82,7 +83,8 @@ p{display:none; position:absolute;}
 <div id="container">
 <center style="font-family:sans-serif; font-size:86px;font-weight:100;">Make Trump Talk!</center>
 <center style="font-family:sans-serif; font-size:16px; margin-top:10px;">Click your Keyboard Keys!</center>
-<p style="top:25%; left:65%; color:tomato;"></p>
+<b style="top:25%; left:65%; color:tomato;">Believe Me!</b>
+	<p style="position:absolute; bottom:1; left:1; color:white;">Coded by Pudgy Poppins with &#9825 for TMJH</p>
 </div>
 </body>
 </html>
