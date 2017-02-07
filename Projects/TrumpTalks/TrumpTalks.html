@@ -18,6 +18,7 @@ b{display:none; position:absolute;}
    if (keyPressed.keyCode == 78) {
 	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/nicePerson");
 	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#NicePerson").css("display","inline-block");
    }
   });
 //S
@@ -25,6 +26,7 @@ b{display:none; position:absolute;}
    if (keyPressed.keyCode == 83) {
 	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/slob");
 	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#slob").css("display","inline-block");
    }
   });
 //R
@@ -32,6 +34,7 @@ b{display:none; position:absolute;}
    if (keyPressed.keyCode == 82) {
 	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/ImRich");
 	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#ImRich").css("display","inline-block");
    }
   });
 //W
@@ -39,6 +42,7 @@ b{display:none; position:absolute;}
    if (keyPressed.keyCode == 87) {
 	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/WatchingYou");
 	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#WatchingYou").css("display","inline-block");
    }
   });
 //C
@@ -46,6 +50,7 @@ b{display:none; position:absolute;}
    if (keyPressed.keyCode == 67) {
 	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/china");
 	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#china").css("display","inline-block");
    }
   });
 //Enter
@@ -53,6 +58,7 @@ b{display:none; position:absolute;}
    if (keyPressed.keyCode == 13) {
 	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/Emails");
 	 $("body").css("background-image","url(Hilary.jpg)");
+	 $("#Emails").css("display","inline-block");
    }
   });
 //F
@@ -60,19 +66,23 @@ b{display:none; position:absolute;}
    if (keyPressed.keyCode == 70) {
 	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/FeelTheBern");
 	 $("body").css("background-image","url(Bernie.jpg)");
+	 $("#FeelBern").css("display","inline-block");
    }
   });
 //A
   $(document).keydown(function(keyPressed) {
    if (keyPressed.keyCode == 65) {
 	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/MakeAmericaGreatAgain");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#GreatAgain").css("display","inline-block");
    }
   });
 //B
   $(document).keydown(function(keyPressed) {
    if (keyPressed.keyCode == 66) {
 	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/BelieveMe");
-	 $("b").css("display","inline-block");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#believe").css("display","inline-block");
    }
   });
   //up arrow
@@ -99,32 +109,38 @@ b{display:none; position:absolute;}
      $("body").css("background-image","url(Bernie.jpg)");
    }
    });
-
 //E
   $(document).keydown(function(keyPressed) {
    if (keyPressed.keyCode == 69) {
 	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/Expensive");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#expensive").css("display","inline-block");
    }
   });
 //G
   $(document).keydown(function(keyPressed) {
    if (keyPressed.keyCode == 71) {
 	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/GreatGreatWall");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#GreatWall").css("display","inline-block");
    }
   });
 //M
   $(document).keydown(function(keyPressed) {
    if (keyPressed.keyCode == 77) {
 	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/MarkMyWords");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#MarkWords").css("display","inline-block");
    }
   });
 //P
   $(document).keydown(function(keyPressed) {
    if (keyPressed.keyCode == 80) {
 	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/MexicoWillPay");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#MexicoPay").css("display","inline-block");
    }
   });
-
 </script>
 </head>
 
@@ -132,8 +148,21 @@ b{display:none; position:absolute;}
 <div id="container">
 <center style="font-family:sans-serif; font-size:86px;font-weight:100;">Make Trump Talk!</center>
 <center style="font-family:sans-serif; font-size:16px; margin-top:10px;">Click your Keyboard Keys!</center>
-<b style="top:25%; left:65%; color:tomato;">Believe Me!</b>
-	<p style="position:absolute; bottom:0; left:1; color:white;">Coded by Pudgy Poppins with &#9825 for TMJH</p>
+<b style="top:25%; left:65%; color:tomato;" id="believe">Believe Me!</b>
+<b style="top:35%; left:75%; color:skyblue;" id="NicePerson">You're Not a Nice Person!</b>
+<b style="top:65%; left:5%; color:green;" id="slob">Slob!</b>
+<b style="top:15%; left:25%; color:lightgreen;" id="ImRich">I'm Rich!</b>
+<b style="top:10%; left:85%; color:#F0F8FF;" id="WatchingYou">I've been watching you!</b>
+<b style="top:60%; left:25%; color:grey;" id="china">China!</b>
+<b style="top:45%; left:30%; color:Aquamarine;" id="FeelBern">Feel the Bern!</b>
+<b style="top:55%; left:5%; color:CadetBlue;" id="GreatAgain">Make America Great Again!</b>
+<b style="top:15%; left:75%; color:chocolate;" id="expensive">Make America Great Again!</b>
+<b style="top:75%; left:45%; color:deeppink;" id="GreatWall">I Will Build a Great Great Wall!</b>
+<b style="top:85%; left:35%; color:#ADFF2F;" id="MarkWords">Mark My Words!</b>
+<b style="top:70%; left:75%; color:lightblue;" id="MexicoPay">Mexico Will Pay!</b>
+<b style="top:50%; left:85%; color:red;" id="Emails">Emails!</b>
+
+<p style="position:absolute; bottom:0; left:1; color:white;">Coded by Pudgy Poppins with &#9825 for TMJH</p>
 </div>
 </body>
 </html>
