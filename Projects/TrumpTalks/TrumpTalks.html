@@ -14,6 +14,20 @@ b{display:none; position:absolute; font-family:"Comic Sans MS", cursive, sans-se
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script src="https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js"></script>
 <script>
+//]
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 219) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/Clapping");
+	 $("body").css("background-image","url(Trump.jpg)");
+   }
+   });
+//[
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 219) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/Laughing");
+	 $("body").css("background-image","url(Trump.jpg)");
+   }
+   });
 //SpaceBar
   $(document).keydown(function(keyPressed) {
    if (keyPressed.keyCode == 32) {
@@ -341,7 +355,7 @@ b{display:none; position:absolute; font-family:"Comic Sans MS", cursive, sans-se
 <b style="top:60%; left:25%; color:grey;" id="china">China!</b>
 <b style="top:45%; left:30%; color:Aquamarine;" id="FeelBern">Feel the Bern!</b>
 <b style="top:55%; left:5%; color:CadetBlue;" id="GreatAgain">Make America Great Again!</b>
-<b style="top:15%; left:75%; color:chocolate;" id="expensive">Make America Great Again!</b>
+<b style="top:15%; left:75%; color:chocolate;" id="expensive">Expensive</b>
 <b style="top:75%; left:45%; color:deeppink;" id="GreatWall">I Will Build a Great Great Wall!</b>
 <b style="top:85%; left:35%; color:#ADFF2F;" id="MarkWords">Mark My Words!</b>
 <b style="top:70%; left:75%; color:lightblue;" id="MexicoPay">Mexico Will Pay!</b>
