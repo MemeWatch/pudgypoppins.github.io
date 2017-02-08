@@ -9,11 +9,59 @@ body{background-image:url(Trump.jpg); background-size:cover; background-position
 #container{
 	padding:17% 0;
 }
-b{display:none; position:absolute;}
+b{display:none; position:absolute; font-family:"Comic Sans MS", cursive, sans-serif;}
 </style>
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script src="https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js"></script>
 <script>
+//SpaceBar
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 32) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/WheresRudy");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#WheresRudy").css("display","inline-block");
+   }
+   });
+//.
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 190) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/WhereAreThey");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#WhereAreThey").css("display","inline-block");
+   }
+   });
+//,
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 188) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/ThisWasTough");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#ThisWasTough").css("display","inline-block");
+   }
+   });
+//;
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 186) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/Ooh");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#Ooh").css("display","inline-block");
+   }
+   });
+//L
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 76) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/KeepYouWaitng");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#KeepYouWaiting").css("display","inline-block");
+   }
+   });
+//K
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 75) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/Boy");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#Boy").css("display","inline-block");
+   }
+   });
 //D
   $(document).keydown(function(keyPressed) {
    if (keyPressed.keyCode == 68) {
@@ -309,6 +357,12 @@ b{display:none; position:absolute;}
 <b style="top:65%; left:25%; color:#3C3FCF;" id="TerribleThing">It's a terrible thing!</b>
 <b style="top:70%; left:20%; color:#990002;" id="AllTalk">They're all talk!</b>
 <b style="top:75%; left:10%; color:#EAFF00;" id="FallingApart">It's falling apart!</b>
+<b style="top:95%; left:60%; color:#542D2D;" id="Boy">Boy oh Boy!</b>
+<b style="top:55%; left:55%; color:#72D0AB;" id="KeepYouWaiting">Sorry to keep you waiting</b>
+<b style="top:90%; left:10%; color:#4642A9;" id="Ooh">Ooo!</b>
+<b style="top:15%; left:10%; color:#15ACE6;" id="ThisWasTough">This was tough!</b>
+<b style="top:20%; left:40%; color:#2D869B;" id="WhereAreThey">Where are they?</b>
+<b style="top:25%; left:30%; color:#1F2B25;" id="WheresRudy">Where's Rudy?</b>
 
 <p style="position:absolute; bottom:0; left:1; color:white;">Coded by Pudgy Poppins with &#9825 for TMJH</p>
 </div>
