@@ -13,6 +13,22 @@ b{display:none; position:absolute;}
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script src="https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js"></script>
 <script>
+//J
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 74) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/ReallyFantastic");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#ReallyFantastic").css("display","inline-block");
+   }
+   });
+//H
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 72) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/GonnaBeHuge");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#GonnaBeHuge").css("display","inline-block");
+   }
+  });
 //Q
   $(document).keydown(function(keyPressed) {
    if (keyPressed.keyCode == 81) {
@@ -237,6 +253,8 @@ b{display:none; position:absolute;}
 <b style="top:70%; left:35%; color:orange;" id="15Bucks">15 Bucks!</b>
 <b style="top:10%; left:15%; color:#45B1B8;" id="LastResort">War should be a last resort!</b>
 <b style="top:40%; left:85%; color:#5746A4;" id="WeHaveTheGuts">We have the guts!</b>
+<b style="top:45%; left:90%; color:#DF90AD;" id="ReallyFantastic">It's gonna be really fantastic</b>
+<b style="top:35%; left:60%; color:#169AAB;" id="GonnaBeHuge">It's gonna be huge!</b>
 
 <p style="position:absolute; bottom:0; left:1; color:white;">Coded by Pudgy Poppins with &#9825 for TMJH</p>
 </div>
