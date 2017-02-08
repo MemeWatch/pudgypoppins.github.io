@@ -13,6 +13,38 @@ b{display:none; position:absolute;}
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script src="https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js"></script>
 <script>
+//Q
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 81) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/WeHaveTheGuts");
+	 $("body").css("background-image","url(Bernie.jpg)");
+	 $("#WeHaveTheGuts").css("display","inline-block");
+   }
+  });
+//V
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 86) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/TuitionFree");
+	 $("body").css("background-image","url(Bernie.jpg)");
+	 $("#TuitionFree").css("display","inline-block");
+   }
+  });
+//X
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 88) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/LastResort");
+	 $("body").css("background-image","url(Bernie.jpg)");
+	 $("#LastResort").css("display","inline-block");
+   }
+  });
+//Z
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 90) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/15Bucks");
+	 $("body").css("background-image","url(Bernie.jpg)");
+	 $("#15Bucks").css("display","inline-block");
+   }
+  });
 //6
   $(document).keydown(function(keyPressed) {
    if (keyPressed.keyCode == 54) {
@@ -201,6 +233,10 @@ b{display:none; position:absolute;}
 <b style="top:85%; left:35%; color:#ADFF2F;" id="MarkWords">Mark My Words!</b>
 <b style="top:70%; left:75%; color:lightblue;" id="MexicoPay">Mexico Will Pay!</b>
 <b style="top:50%; left:85%; color:red;" id="Emails">Emails!</b>
+<b style="top:30%; left:85%; color:yellow;" id="TuitionFree">Tuition Free College!</b>
+<b style="top:70%; left:35%; color:orange;" id="15Bucks">15 Bucks!</b>
+<b style="top:10%; left:15%; color:#45B1B8;" id="LastResort">War should be a last resort!</b>
+<b style="top:40%; left:85%; color:#5746A4;" id="WeHaveTheGuts">We have the guts!</b>
 
 <p style="position:absolute; bottom:0; left:1; color:white;">Coded by Pudgy Poppins with &#9825 for TMJH</p>
 </div>
