@@ -14,6 +14,14 @@ b{display:none; position:absolute; font-family:"Comic Sans MS", cursive, sans-se
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script src="https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js"></script>
 <script>
+// \
+  $(document).keydown(function(keyPressed) {
+   if (keyPressed.keyCode == 220) {
+	 $.playSound("https://pudgypoppins.github.io/Projects/TrumpTalks/Audio%20Files/Yeah");
+	 $("body").css("background-image","url(Trump.jpg)");
+	 $("#Yeah").css("display","inline-block");
+   }
+   });
 // /
   $(document).keydown(function(keyPressed) {
    if (keyPressed.keyCode == 191) {
@@ -402,8 +410,9 @@ b{display:none; position:absolute; font-family:"Comic Sans MS", cursive, sans-se
 <b style="top:10%; left:70%; color:#0E044F;" id="OnlyInNewHampshire">Only in New Hampshire</b>
 <b style="top:0; left:50%; color:#39FAF5;" id="UhOh">Uh oh!</b>
 <b style="top:5%; left:30%; color:#96E63B;" id="Aah">Aah!</b>
+<b style="top:5%; left:35%; color:#70299B;" id="Yeah">Yeah</b>
 
-<p style="position:absolute; bottom:0; left:1; color:white;">Coded by Pudgy Poppins with &#9825 for TMJH</p>
+<p style="position:absolute; bottom:0; left:1; color:white; margin-bottom:1%;">Coded by Pudgy Poppins with &#9825 for TMJH</p>
 </div>
 </body>
 </html>
